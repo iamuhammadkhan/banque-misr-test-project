@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mgo-xJ-ABH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies Tab Bar Controller-->
+        <scene sceneID="AMK-Rg-X9w">
+            <objects>
+                <tabBarController storyboardIdentifier="MoviesTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="mgo-xJ-ABH" customClass="MoviesTabBarController" customModule="banque_misr_test_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="83V-uX-qnn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="suq-tp-pzF" kind="relationship" relationship="viewControllers" id="RKG-CR-Jus"/>
+                        <segue destination="g0l-Tg-0Lc" kind="relationship" relationship="viewControllers" id="s1w-kh-2F5"/>
+                        <segue destination="GdR-qj-5Hs" kind="relationship" relationship="viewControllers" id="szn-re-RRf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8C-lE-yPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+        <!--Upcoming-->
+        <scene sceneID="ilN-wD-vHK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Upcoming" id="4Tv-gU-p8y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ni0-2X-bba"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTp-Wp-qlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618" y="530"/>
+        </scene>
+        <!--NowPlaying-->
+        <scene sceneID="vI2-aB-64f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NowPlaying" id="Mwn-fJ-JHX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="llm-cC-0ry"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRh-MW-UkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="-563"/>
+        </scene>
+        <!--Popular-->
+        <scene sceneID="Yf0-ds-VVK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Popular" id="ycc-XN-VUu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nN9-v5-968"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUg-gG-N1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.2748091603053" y="3.5211267605633805"/>
+        </scene>
+        <!--Now Playing-->
+        <scene sceneID="ctk-dg-dlg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="suq-tp-pzF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="nowPlaying" id="E41-gW-ouG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kb1-HE-fAh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mwn-fJ-JHX" kind="relationship" relationship="rootViewController" id="ZTd-AG-Brs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzH-rV-ato" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-650"/>
+        </scene>
+        <!--Popular Movies-->
+        <scene sceneID="Kfv-EP-Hsj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g0l-Tg-0Lc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Popular Movies" image="popular" id="yqc-eJ-oza"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f8H-fb-ivX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ycc-XN-VUu" kind="relationship" relationship="rootViewController" id="naN-dK-q21"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPC-Rq-yDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="4"/>
+        </scene>
+        <!--Upcoming Movies-->
+        <scene sceneID="tXb-b4-Ie4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GdR-qj-5Hs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Upcoming Movies" image="upcoming" id="hUx-ci-570"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Esr-g8-CXR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Tv-gU-p8y" kind="relationship" relationship="rootViewController" id="pxW-xQ-9qK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwf-vd-9vY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="697"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nowPlaying" width="10.666666984558105" height="10.666666984558105"/>
+        <image name="popular" width="10.666666984558105" height="10.666666984558105"/>
+        <image name="upcoming" width="10.666666984558105" height="10.666666984558105"/>
+    </resources>
+</document>
